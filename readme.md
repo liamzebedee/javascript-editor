@@ -13,16 +13,16 @@ based originally on [htmleditor](http://mrdoob.com/projects/htmleditor/) by mrdo
 
 ## usage
 
-use it with [browserify](http://browserify.org)
+Install Node and [browserify](http://browserify.org).
 
-```
-npm install javascript-editor
-```
+ 1. `git clone https://github.com/liamzebedee/javascript-editor`
+ 2. `cd javascript-editor && npm install`
+ 3. `browserify demo.js > bundle.js`
+
+Then include `bundle.js` and all the CSS files included in the directory, and access the global.jsEditor function to do things further.
 
 ```javascript
-var createEditor = require('javascript-editor')
-
-var editor = createEditor({ container: document.querySelector('#editor') })
+var editor = jsEditor({ container: document.querySelector('#editor') })
 
 editor.on('change', function() {
   var value = editor.getValue()
