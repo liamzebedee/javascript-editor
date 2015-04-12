@@ -17,7 +17,7 @@ Install Node and [browserify](http://browserify.org).
 
  1. `git clone https://github.com/liamzebedee/javascript-editor`
  2. `cd javascript-editor && npm install`
- 3. `browserify demo.js > bundle.js`
+ 3. `browserify demo.js -o bundle.js`
 
 Then include `bundle.js` and all the CSS files included in the directory, and access the global.jsEditor function to do things further.
 
